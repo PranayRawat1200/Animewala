@@ -1,0 +1,236 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+    background-color: rgb(27, 125, 125);
+}
+#fpage{
+    height: 100%;
+    width: 100%;
+    
+}
+#fake{
+    height: 10%;
+    width: 100%;
+    background-color: darkcyan;
+    position: absolute;
+    z-index: 1;
+}
+#header{
+    height: 10%;
+    width: 100%;
+    background-color: darkcyan;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+}
+#logo img{
+    border: 1px solid black;
+    border-radius: 60%;
+    height: 70px;
+    width: 70px;
+}
+#header h1{
+    color: rgb(25, 44, 44);
+    align-items: center;
+    text-transform: capitalize;
+} 
+.titles a{
+    padding-top: 4px;
+    margin-left: 200px;
+    display: flex;
+    font-size: larger;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(25, 44, 44);
+    text-transform: capitalize;
+}
+.titles a:hover{
+    color: rgb(40, 80, 80);
+    z-index: 2;
+}
+#home {
+    padding-top: 5%;
+}
+.home{
+    text-transform: capitalize;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    padding-top: 45px;
+}
+.slider-frame{
+    overflow: hidden;
+    height: 600px;
+    width: 1200px;
+    margin-left: 210px;
+    margin-top: 35px;
+}
+@-webkit-keyframes slide_animation{
+    0%{left: 0px;}
+    10%{left: 0px;}
+    20%{left: 1200px;}
+    30%{left: 1200px;}
+    40%{left: 2400px;}
+    50%{left: 2400px;}
+    60%{left: 1200px;}
+    70%{left: 1200px;}
+    80%{left: 0px;}
+    90%{left: 0px;}
+    100%{left: 0px;}
+}
+.slider-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration:30s ;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.img-container{
+    height: 600px;
+    width: 1200px;
+    position: relative;
+    float: left;
+    box-shadow: 10px rgb(26, 25, 25);
+}
+#spage{
+    height: 100%;
+    width: 100%;
+}
+#line{
+    padding-top: 100px;
+    height: 5px;
+    width: 100%;
+
+}
+.cards{
+    margin-top: 100px;
+    display: inline-block;
+    height: 360px;
+    width: 250px;
+    background-color: rgb(9, 97, 97);
+    margin: 55px;
+}
+.cards:hover{
+    background-color: rgb(10, 100, 100);
+    box-shadow:  2px 2px 2px rgb(36, 35, 35);
+}
+.image img{
+    height: 110px;
+    width: 93%;
+    padding: 5px;
+    margin: 6px; 
+    object-fit: cover;
+}
+.titles h2{
+    text-transform: capitalize;
+    text-align: center;
+    color: #fff;    
+    height: 50px;
+    width: 94%;
+}.dec p{
+    color: #fff;
+    height: 140px;
+    width: 250px;
+    padding-left: 2px;
+    text-align: center;
+}
+.dec button{
+    height: 34px;
+    width: 89px;
+    margin-left: 80px ;
+    background-color: darkcyan;
+    cursor: pointer;
+    padding: 8x;
+    border-radius: 25px;
+}
+#tpage{
+    height: 100%;
+    width: 100%;
+}
+#online h1{
+    padding-top: 100px;
+    height: 69px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+.anime{
+    display: inline-block;padding: 100px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: #fff;
+}
+footer{
+    height: 30%;
+    width: 100%;
+    background-color: rgb(4, 38, 38);
+    color: #fff;
+}
+#detail h2{
+    height: 5%;
+    width: 100%;
+    padding-left: 40%;
+}
+#image img{
+    height: 180px;
+}
+#info{
+    display: flex;
+}
+#name h2,h4{
+    margin: 15px;
+}
+#name{
+    height: 20%;
+    width: 38%;
+}
+#webdet{
+    padding-left: 80px;
+    padding-top: 15px;
+    height: 20%;
+    width: 40%;
+}
+#webdet h2{
+    display: flex;
+    justify-content: center;
+}
+#end{
+    height: 20%;
+    width: 60%;
+    padding-top: 20px;
+    padding-left: 80px;
+    float: right;
+}
+#end i{
+    padding-top: 5px;
+}
+.icon{
+    display: flex;
+}
+.icon h5{
+    padding-top: 4px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+.icon a:hover{
+    color: #acacac;
+    box-shadow: #6d6c6c;
+}
